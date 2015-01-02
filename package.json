@@ -1,0 +1,13 @@
+{
+  "name": "ghost",
+  "version": "1.0.0",
+  "description": "Ghost Theme",
+  "author": "German Encinas",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.5.6",
+    "gulp-livereload": "^2.1.1",
+    "gulp-sass": "^1.1.0",
+    "gulp-watch": "^2.0.0"
+  }
+}
