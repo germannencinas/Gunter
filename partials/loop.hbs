@@ -1,0 +1,31 @@
+{{#foreach posts}}
+	
+	<article class="{{post_class}}">
+		<div class="inner">
+			<header class="header-post">
+				<span class="meta-post">
+					<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
+				</span>
+				<h2 class="title-post">
+					<a href="{{url}}">{{{title}}}</a>
+				</h2>
+			</header>
+
+			{{#if image}}
+				<figure class="img-post">
+					<img src="{{image}}" alt="">
+				</figure>
+			{{/if}}
+
+			<section class="post-excerpt">
+				<p>{{excerpt}}&hellip;</p>
+				<p>
+					<a href="{{url}}" class="more">Continuar leyendo <i class="fa fa-angle-right"></i></a>
+				</p>
+			</section>
+		</div>
+	</article>
+
+{{/foreach}}
+
+{{pagination}}
