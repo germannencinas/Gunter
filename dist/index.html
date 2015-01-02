@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<title>Germán Encinas - Desarrollador Front-End</title>
+
+	<link href="img/logo.ico" rel="icon" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+	
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/screen.css">
+</head>
+<body>
+
+	<nav>
+		<div class="toggle-menu">
+		    <div id="icon">
+		        <div class="one"></div>
+		        <div class="two"></div>
+		        <div class="three"></div>
+		    </div>
+
+		    <div id="menu">
+		        <ul>
+		            <li>
+		            	<a href="https://twitter.com/germannencinas"><span><i class="fa fa-twitter"></i></span> Twitter</a> 
+		            </li>
+		            <li>
+		            	<a href="https://github.com/germannencinas"><span><i class="fa fa-github"></i></span> Github</a>
+		            </li>
+		            <li>
+		            	<a href="#"><span><i class="fa fa-rss"></i></span> RSS</a>
+		            </li>                
+		        </ul>
+		    </div> 
+		 </div>
+	</nav>
+
+	<header class="main-header">
+		<figure class="logo slideDown">
+			<a href="#">
+				<img class="img-logo" src="img/logo.png">
+			</a>
+		</figure>
+		<div class="title">
+			<a href="#">
+				<h1>German Encinas</h1>
+			</a>
+			<p>Desarrollador Front-End</p>
+		</div>
+	</header>
+
+	<section class="posts">
+
+		<article class="post">
+			<div class="inner">
+				<header class="header-post">
+					<span class="meta-post">
+						<time datetime="">21 Dec 2014</time>
+					</span>
+					<h2 class="title-post">
+						<a href="#">Uso de Rems y Ems</a>
+					</h2>
+				</header>
+				<figure class="img-post">
+					<img src="img/post.jpeg" alt="">
+				</figure>
+				<section class="post-excerpt">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa voluptatum harum, nobis praesentium eius expedita ea unde nihil! Rerum sed, ullam alias inventore natus, cumque deserunt laboriosam fugiat. Perferendis, eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa similique odio soluta inventore nobis deserunt cupiditate cum distinctio necessitatibus tempora, velit repellat, ratione! Veritatis sequi magnam alias in voluptate laborum?</p>
+					<p>
+						<a href="#" class="more">Continuar leyendo <i class="fa fa-angle-right"></i></a>
+					</p>
+				</section>
+			</div>
+		</article>
+		
+	</section>
+
+	<section class="pagination">
+		<nav role="pagination">
+			<div class="inner">
+				<a href="" class="button newer-posts"><i class="fa fa-angle-left"></i> Recientes</a>
+				<a href="" class="button older-posts">Anteriores <i class="fa fa-angle-right"></i></a>
+			</div>
+		</nav>
+	</section>
+
+
+	<footer class="blog-footer">
+		<div class="inner">
+			<p>Publicado con <a href="http://ghost.org">Ghost.</a></p>
+		</div>
+	</footer>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+
+	<script>
+
+		$("#icon").click(function() {
+		    $(this).toggleClass("active");
+	        $("#menu").fadeToggle();
+        });
+
+        $(document).ready(function() {
+          $('pre code').each(function(i, block) {
+            hljs.highlightBlock(block);
+          });
+        });
+
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<title>Germán Encinas - Desarrollador Front-End</title>
+
+	<link href="img/logo.ico" rel="icon" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+	
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/screen.css">
+</head>
+<body>
+
+	<div class="toggle-menu">
+	    <div id="icon">
+	        <div class="one"></div>
+	        <div class="two"></div>
+	        <div class="three"></div>
+	    </div>
+
+	    <div id="menu">
+	        <ul>
+	            <li>
+	            	<a href="https://twitter.com/germannencinas"><span><i class="fa fa-twitter"></i></span> Twitter</a> 
+	            </li>
+	            <li>
+	            	<a href="https://github.com/germannencinas"><span><i class="fa fa-github"></i></span> Github</a>
+	            </li>
+	            <li>
+	            	<a href="#"><span><i class="fa fa-rss"></i></span> RSS</a>
+	            </li>                
+	        </ul>
+	    </div> 
+	 </div>
+
+	<header class="main-header">
+		<figure class="logo slideDown">
+			<a href="#">
+				<img class="img-logo" src="img/logo.png">
+			</a>
+		</figure>
+		<div class="title">
+			<a href="#">
+				<h1>German Encinas</h1>
+			</a>
+			<p>Desarrollador Front-End</p>
+		</div>
+	</header>
+
+	<section class="posts">
+
+		<article class="post">
+			<div class="inner">
+				<header class="header-post">
+					<span class="meta-post">
+						<time datetime="">21 Dec 2014</time>
+					</span>
+					<h2 class="title-post">
+						Uso de Rems y Ems
+					</h2>
+				</header>
+				
+				<section class="content-post">
+					<p>You're live! Nice. We've put together a little post to introduce you to the Ghost editor and get you started. You can manage your content by signing in to the admin area at <code>&lt;your blog URL&gt;/ghost/</code>. When you arrive, you can select this post from a list on the left and see a preview of it on the right. Click the little pencil icon at the top of the preview to edit this post and read the next section!</p>
+
+					<h2 id="gettingstarted">Getting Started</h2>
+
+					<p>Ghost uses something called Markdown for writing. Essentially, it's a shorthand way to manage your post formatting as you write!</p>
+
+					<p>Writing in Markdown is really easy. In the left hand panel of Ghost, you simply write as you normally would. Where appropriate, you can use <em>shortcuts</em> to <strong>style</strong> your content. For example, a list:</p>
+
+					<ul>
+					<li>Item number one</li>
+					<li>Item number two
+					<ul><li>A nested item</li></ul></li>
+					<li>A final item</li>
+					</ul>
+
+					<p>or with numbers!</p>
+
+					<ol>
+					<li>Remember to buy some milk  </li>
+					<li>Drink the milk  </li>
+					<li>Tweet that I remembered to buy the milk, and drank it</li>
+					</ol>
+
+					<h3 id="links">Links</h3>
+
+					<p>Want to link to a source? No problem. If you paste in a URL, like <a href="http://ghost.org">http://ghost.org</a> - it'll automatically be linked up. But if you want to customise your anchor text, you can do that too! Here's a link to <a href="http://ghost.org">the Ghost website</a>. Neat.</p>
+
+					<h3 id="whataboutimages">What about Images?</h3>
+
+					<p>Images work too! Already know the URL of the image you want to include in your article? Simply paste it in like this to make it show up:</p>
+
+					<p><img src="https://ghost.org/images/ghost.png" alt="The Ghost Logo" /></p>
+
+					<p>Not sure which image you want to use yet? That's ok too. Leave yourself a descriptive placeholder and keep writing. Come back later and drag and drop the image in to upload:</p>
+
+					<h3 id="quoting">Quoting</h3>
+
+					<p>Sometimes a link isn't enough, you want to quote someone on what they've said. It was probably very wisdomous. Is wisdomous a word? Find out in a future release when we introduce spellcheck! For now - it's definitely a word.</p>
+
+					<blockquote>
+					  <p>Wisdomous - it's definitely a word.</p>
+					</blockquote>
+
+					<h3 id="workingwithcode">Working with Code</h3>
+
+					<p>Got a streak of geek? We've got you covered there, too. You can write inline <code>&lt;code&gt;</code> blocks really easily with back ticks. Want to show off something more comprehensive? 4 spaces of indentation gets you there.</p>
+
+<pre><code>@font-face {
+  font-family: Chunkfive; src: url('Chunkfive.otf');
+}
+
+body, .usertext {  
+  color: #F0F0F0; background: #600;
+  font-family: Chunkfive, sans;
+}
+
+@import url(print.css);
+@media print {
+  a[href^=http]::after {
+    content: attr(href)
+  }
+}
+</code></pre>
+
+					<h3 id="readyforabreak">Ready for a Break?</h3>
+
+					<p>Throw 3 or more dashes down on any new line and you've got yourself a fancy new divider. Aw yeah.</p>
+
+					<hr />
+
+					<h3 id="advancedusage">Advanced Usage</h3>
+
+					<p>There's one fantastic secret about Markdown. If you want, you can write plain old HTML and it'll still work! Very flexible.</p>
+
+					<p><input type="text" placeholder="I'm an input field!" /></p>
+
+					<p>That should be enough to get you started. Have fun - and let us know what you think :)</p>
+				</section>
+
+				<footer class="footer-post">
+					<section class="author-post">
+						<figure class="avatar">
+							<img src="img/profile.jpg" alt="">
+						</figure>
+
+						<div class="bio">
+							<span>Autor</span>
+							<h4 class="author-name">
+								<a href="#">Germán Encinas</a>
+							</h4>
+							<p>Desarrollador Front-End, amante de la musica y la tecnologia.</p>
+						</div>
+					</section>
+
+					<section class="share">
+						<h4>Comparte</h4>
+						<a href="" class="fa fa-twitter"><span class="hidden">Twitter</span></a>
+						<a href="" class="fa fa-facebook"><span class="hidden">Facebook</span></a>
+						<a href="" class="fa fa-google-plus"><span class="hidden">Google+</span></a>
+					</section>
+				</footer>
+
+				<section class="comments-post">
+
+				</section>
+			</div>
+		</article>
+	</section>
+
+	<footer class="blog-footer">
+		<div class="inner">
+			<p>Publicado con <a href="http://ghost.org">Ghost.</a></p>
+		</div>
+	</footer>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+
+	<script>
+
+		$("#icon").click(function() {
+		    $(this).toggleClass("active");
+	        $("#menu").fadeToggle();
+        });
+
+        $(document).ready(function() {
+          $('pre code').each(function(i, block) {
+            hljs.highlightBlock(block);
+          });
+        });
+
+	</script>
+	
+</body>
+</html>
