@@ -222,7 +222,8 @@ dl dd {
   margin-bottom: 16px; }
 
 li {
-  margin: 8px 0; }
+  margin: 8px 0; 
+  line-height: 1.65; }
 
 li li {
   margin: 0; }
