@@ -1,9 +1,9 @@
 Gunter
 ======
 
-Gunter is a simple and minimalist theme for Ghost by [German Encinas](http://germanencinas.com/).
+Gunter is a simple and minimalist theme for [Ghost](https://github.com/tryghost/ghost/) by [German Encinas](http://germanencinas.com/).
 
-View Gunter in action [here](View Gunter in action here.).
+View Gunter in action [here](http://germanencinas.com/).
 
 ## Features
 
