@@ -261,7 +261,7 @@ code, tt {
   white-space: pre-wrap;
   border: 1px solid #eee;
   background: #f4f4f4;
-  vertical-align: top; }
+  vertical-align: middle; }
 
 pre code {
   padding: 25px !important; }
