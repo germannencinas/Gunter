@@ -412,7 +412,8 @@ img {
   margin: 0 auto;
   padding: 8px;
   text-transform: uppercase;
-  font-size: 1rem; }
+  font-size: 1rem; 
+  line-height: 0; }
 
 #menu a {
   color: #000;
@@ -486,7 +487,12 @@ img {
   height: 200px;
   display: block;
   margin: 0 auto;
-  transition: all 0.25s ease-in; }
+  transition: all 0.25s ease-in; 
+ -webkit-animation: slideDown 1s ease;
+ -moz-animation: slideDown 1s ease;
+ -o-animation: slideDown 1s ease;
+ animation: slideDown 1s ease;
+ visibility: visible !important; }
 
 .main-header .logo .img-logo {
   width: 100%;
@@ -785,13 +791,6 @@ img {
   60% {
     -webkit-transform: translateX(-3px);
     transform: translateX(-3px); } }
-
-.slideDown {
-  -webkit-animation: slideDown 1s ease;
-  -moz-animation: slideDown 1s ease;
-  -o-animation: slideDown 1s ease;
-  animation: slideDown 1s ease;
-  visibility: visible !important; }
 
 @-webkit-keyframes slideDown {
   0% {
