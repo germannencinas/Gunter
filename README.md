@@ -3,7 +3,7 @@ Gunter
 
 A simple and clean theme for [Ghost](https://github.com/tryghost/ghost/) by [Germán Encinas](http://germanencinas.com/).
 
-View Gunter in action [here](http://germanencinas.com/).
+View Gunter in action [here](http://germanencinas.com/gunter).
 
 ## Features
 
