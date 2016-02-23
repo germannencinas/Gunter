@@ -15,3 +15,6 @@ View Gunter in action [here](http://germanencinas.com/gunter).
 ## License
 
 Copyright (c) 2015 Germán Encinas - Released under The MIT License.
+
+Edited by Sebastian K. 
+-> updated the translation to English and added a ❤ to the footer
