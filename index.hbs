@@ -3,9 +3,11 @@
 {{> "menu"}}
 
 <header class="main-header {{#if @site.cover_image}}" style="background-image: url({{@site.cover_image}}){{else}}no-cover{{/if}}">
+	{{#if @site.logo}}
 	<figure class="logo">
-		{{#if @site.logo}}<a href="{{@site.url}}"><img class="img-logo" src="{{@site.logo}}" alt="Logo Blog"></a>{{/if}}
+		<a href="{{@site.url}}"><img class="img-logo" src="{{@site.logo}}" alt="Logo Blog"></a>
 	</figure>
+	{{/if}}
 	<div class="title">
 		<a href="{{@site.url}}">
 			<h1>{{@site.title}}</h1>
