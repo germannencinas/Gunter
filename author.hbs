@@ -19,7 +19,7 @@
 	            	<a href=""><span><i class="fa fa-github"></i></span> Github</a>
 	            </li>
 	            <li>
-	            	<a href="{{@blog.url}}/rss/"><span><i class="fa fa-rss"></i></span> RSS</a>
+	            	<a href="{{@site.url}}/rss/"><span><i class="fa fa-rss"></i></span> RSS</a>
 	            </li>                
 	        </ul>
 	    </div> 
@@ -28,10 +28,10 @@
 
 <header class="main-header {{#if @site.cover_image}}" style="background-image: url({{@site.cover_image}}){{else}}no-cover{{/if}}">
 	<figure class="logo">
-		{{#if @blog.logo}}<a href="{{@blog.url}}"><img class="img-logo" src="{{@blog.logo}}" alt="Logo Blog"></a>{{/if}}
+		{{#if @site.logo}}<a href="{{@site.url}}"><img class="img-logo" src="{{@site.logo}}" alt="Logo Blog"></a>{{/if}}
 	</figure>
 	<div class="title">
-		<a href="{{@blog.url}}">
+		<a href="{{@site.url}}">
 			<h1>{{name}}</h1>
 		</a>
 		{{#if bio}}
