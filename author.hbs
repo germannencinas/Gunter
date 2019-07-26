@@ -19,19 +19,21 @@
 	            	<a href=""><span><i class="fa fa-github"></i></span> Github</a>
 	            </li>
 	            <li>
-	            	<a href="{{@blog.url}}/rss/"><span><i class="fa fa-rss"></i></span> RSS</a>
+	            	<a href="{{@site.url}}/rss/"><span><i class="fa fa-rss"></i></span> RSS</a>
 	            </li>                
 	        </ul>
 	    </div> 
 	 </div>
 </nav>
 
-<header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+<header class="main-header {{#if @site.cover_image}}" style="background-image: url({{@site.cover_image}}){{else}}no-cover{{/if}}">
+	{{#if @site.logo}}
 	<figure class="logo">
-		{{#if @blog.logo}}<a href="{{@blog.url}}"><img class="img-logo" src="{{@blog.logo}}" alt="Logo Blog"></a>{{/if}}
+		<a href="{{@site.url}}"><img class="img-logo" src="{{@site.logo}}" alt="Logo Blog"></a>
 	</figure>
+	{{/if}}
 	<div class="title">
-		<a href="{{@blog.url}}">
+		<a href="{{@site.url}}">
 			<h1>{{name}}</h1>
 		</a>
 		{{#if bio}}

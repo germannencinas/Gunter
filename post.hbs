@@ -4,15 +4,17 @@
 
 {{> "menu"}}
 
-<header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+<header class="main-header {{#if @site.cover_image}}" style="background-image: url({{@site.cover_image}}){{else}}no-cover{{/if}}">
+	{{#if @site.logo}}
 	<figure class="logo">
-		{{#if @blog.logo}}<a href="{{@blog.url}}"><img class="img-logo" src="{{@blog.logo}}" alt="Logo Blog"></a>{{/if}}
+		<a href="{{@site.url}}"><img class="img-logo" src="{{@site.logo}}" alt="Logo Blog"></a>
 	</figure>
+	{{/if}}
 	<div class="title">
-		<a href="{{@blog.url}}">
-			<h1>{{@blog.title}}</h1>
+		<a href="{{@site.url}}">
+			<h1>{{@site.title}}</h1>
 		</a>
-		<p>{{@blog.description}}</p>
+		<p>{{@site.description}}</p>
 	</div>
 </header>
 
@@ -33,11 +35,11 @@
 
 				<footer class="footer-post">
 
-					{{#author}}
+					{{#primary_author}}
 					<section class="author-post">
-						{{#if image}}
+						{{#if feature_image}}
 							<figure class="avatar">
-								<img src="{{image}}" alt="{{name}}">
+								<img src="{{img_url feature_image}}" alt="{{name}}">
 							</figure>
 						{{/if}}
 
@@ -51,7 +53,7 @@
 							{{/if}}
 						</div>
 					</section>
-					{{/author}}
+					{{/primary_author}}
 
 					<section class="share">
 						<h4>Comparte</h4>
